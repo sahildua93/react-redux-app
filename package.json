@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "prod": "webpack -p",
     "start": "webpack-dev-server"
   },
   "dependencies": {

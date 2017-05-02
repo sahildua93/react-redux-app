@@ -1,0 +1,34 @@
+.buttonsuccess1 {
+    margin-left: 188px;
+    font-size: 18px;
+    width: 150px;
+}
+.buttonsuccess2 {
+    margin-left: 10px;
+    font-size: 18px;
+    width: 150px;
+
+}
+
+.mainDiv {
+    margin-top: 13%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 25%;
+    font-size: 65px;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}

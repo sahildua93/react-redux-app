@@ -14,7 +14,7 @@ export default class Home extends Component{
         return(
             <div>
                 <div className="mainDiv">
-                <Link to="/userList"><input className="btn btn-primary" type="button" value="userlist"/></Link>
+                <Link to="/userList"><input className="btn btn-primary mainDiv" type="button" value="userlist"/></Link>
 
                 </div>
             </div>

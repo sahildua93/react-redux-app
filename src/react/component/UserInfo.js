@@ -7,6 +7,9 @@ import React from "react"
 import {deleteUsers, editUsers} from '../actions/async.actions'
 import {connect} from 'react-redux'
 import {EditComponent} from './EditComponent'
+//import {divStyle} from '../../css/style'
+import '../../css/style.css'
+
 
 
  class UserInfo extends React.Component{
@@ -49,6 +52,7 @@ import {EditComponent} from './EditComponent'
         return(
             <div>
                 {
+
                     (this.state.edit)
                     ?
                     <EditComponent userName={this.state.name} userEmail={this.state.email} userId={params} updateuser={this.updateUser}/>
@@ -59,22 +63,22 @@ import {EditComponent} from './EditComponent'
                                 <h4>User Details</h4>
                                 <table className="table table-bordered">
                                    <thead>
-                                       <tr>
+                                       <tr className="success">
                                            <th>ID</th>
                                             <td>{items._id}</td>
                                        </tr>
-                                       <tr>
+                                       <tr className="danger">
                                             <th>Name</th>
                                             <td>{items.name}</td>
                                        </tr>
-                                       <tr>
+                                       <tr className="info">
                                             <th>Email ID</th>
                                             <td>{items.email}</td>
                                        </tr>
                                    </thead>
                                 </table>
-                                <input type="submit" value="DELETE" className="btn btn-danger" onClick={this.deleteUser.bind(this)} />
-                                <input type="submit" value="EDIT" className="btn btn-warning"onClick={this.editUserState.bind(this,items)}/>
+                                <input type="submit" value="DELETE"  className="btn btn-danger buttonsuccess1" onClick={this.deleteUser.bind(this)} />
+                                <input type="submit" value="EDIT"  className="btn btn-warning buttonsuccess2"onClick={this.editUserState.bind(this,items)}/>
                             </div>
 
                     })

@@ -1,6 +1,6 @@
-import {connect} from 'react-redux';
-import React, {Component} from 'react';
-import {fetchUsers} from '../actions/async.actions'
+import { connect } from 'react-redux';
+import React, { Component } from 'react';
+import { fetchUsers } from '../actions/async.actions'
 import { BrowserRouter as Router, Link , Route , Redirect } from 'react-router-dom'
 import UserList from './UserList'
 import UserInfo from './UserInfo'
